@@ -184,7 +184,7 @@ function baseCommand(cmd, arch) {
 		scriptPath = path.join(__dirname, 'vbs')
 	}
 
-	return ['//Nologo', path.join(scriptPath, cmd), arch]
+	return ['//Nologo', path.join(scriptPath.toString(), cmd), arch]
 }
 
 //TODO: move to helper.js?
